@@ -154,6 +154,8 @@ def main(config):
     pp = pprint.PrettyPrinter(indent=4)
     pp.pprint(vars(config))
 
+    torch.autograd.set_detect_anomaly(True)
+
     # train_src, train_tgt = '.'.join(config.train.split('.')[:-2] + ["src"] + ["tsv"]), '.'.join(config.train.split('.')[:-2] + ["tgt"] + ["tsv"])
     # valid_src, valid_tgt = '.'.join(config.valid.split('.')[:-2] + ["src"] + ["tsv"]), '.'.join(config.valid.split('.')[:-2] + ["tgt"] + ["tsv"])
     train_src = "/Users/humanlearning/text_summarization/summary_data/Training/train.shuf.src.tsv"
