@@ -1,4 +1,4 @@
-conda install pytorch torchvision torchaudio -c pytorch-nightly
+pytorch
 tqdm
 numpy
 pandas
