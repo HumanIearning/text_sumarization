@@ -158,10 +158,10 @@ def main(config):
 
     # train_src, train_tgt = '.'.join(config.train.split('.')[:-2] + ["src"] + ["tsv"]), '.'.join(config.train.split('.')[:-2] + ["tgt"] + ["tsv"])
     # valid_src, valid_tgt = '.'.join(config.valid.split('.')[:-2] + ["src"] + ["tsv"]), '.'.join(config.valid.split('.')[:-2] + ["tgt"] + ["tsv"])
-    train_src = "/Users/humanlearning/text_summarization/summary_data/Training/train.shuf.src.tsv"
-    train_tgt = "/Users/humanlearning/text_summarization/summary_data/Training/train.shuf.tgt.tsv"
-    valid_src = "/Users/humanlearning/text_summarization/summary_data/Validation/valid.shuf.src.tsv"
-    valid_tgt = "/Users/humanlearning/text_summarization/summary_data/Validation/valid.shuf.tgt.tsv"
+    train_src = "../summary_data/Training/train.shuf.src.tsv"
+    train_tgt = "../summary_data/Training/train.shuf.tgt.tsv"
+    valid_src = "../summary_data/Validation/valid.shuf.src.tsv"
+    valid_tgt = "../summary_data/Validation/valid.shuf.tgt.tsv"
 
     train_dataset = dataset.CustomDataset(train_src, train_tgt)
     valid_dataset = dataset.CustomDataset(valid_src, valid_tgt)
